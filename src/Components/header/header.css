@@ -1,0 +1,86 @@
+header {
+    height: 100vh;
+    padding : 3rem;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+
+.header__container {
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.cta {
+    gap: 1.2rem;
+    margin-top :2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* ================ Header Socials =============== */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position : absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1.3rem;
+}
+
+.header__socials::after {
+    content: "";
+    height: 2rem;
+    width: 1px;
+    background: var(--color-primary);
+}
+
+.my-image {
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 2rem;
+    overflow: hidden;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+.my-image img {
+    border-radius: 12rem 12rem 0 0;
+}
+
+.scroll__down {
+    position: absolute;
+    bottom: 5rem;
+    right: -2.3rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size:0.9rem;
+}
+
+/* ================ Medium Screen =============== */
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+ 
+}
+
+/* ================ Small Screen =============== */
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  .header__socials, .scroll__down{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  header {
+    height: 100vh;
+  }
+}
